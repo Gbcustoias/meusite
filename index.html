@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andre Asaoka - Nutricionista</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: #fff;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            flex-shrink: 0;
+        }
+
+        header .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header .header-content img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        nav {
+            background-color: #a1a1a1;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            flex-shrink: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+
+        nav ul li a:hover {
+            background-color: #555;
+        }
+
+        main {
+            width: 100%;
+            min-width: 100vw; /* Garante que o main ocupe toda a largura da tela */
+            margin: 0;
+            padding: 20px;
+            background-image: url('background.jpg'); /* Usando o arquivo background.jpg */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #fff; /* Garante que o texto fique legível sobre o background */
+        }
+
+        .section-content {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-content h2 {
+            margin-bottom: 20px;
+            color: #FFFFFF; /* Cor bege claro */
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .flex-container img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .flex-container .text-right {
+            max-width: 600px;
+            text-align: justify;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-media a {
+            color: #333;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            font-size: 24px;
+            padding: 10px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-media a:hover {
+            background: #ddd;
+        }
+
+        @media (max-width: 768px) {
+            header .header-content img {
+                margin-left: 15px; /* Move o logo um pouco para a direita no celular */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="header.png" alt="Andre Asaoka - Nutricionista">
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="sobre" class="vertical-center">
+            <div class="section-content">
+                <h2>Sobre Mim</h2>
+                <div class="flex-container">
+                    <img src="sobre.jpg" alt="Foto de Andre Asaoka">
+                    <div class="text-right">
+                        <p>Amante da atividade física e alimentação sob a qualidade de vida e performance esportiva, coleciono experiências e me interesso por modalidades variadas.  Aliando saberes do método cientifico ao cuidado individualizado, vamos elaborar uma estratégia de fácil adesão e grandes resultados.</p>
+                        <p>Meu trabalho inclui não apenas o atendimento nutricional regular, mas também toda a atenção e cuidado que são fundamentais para o sucesso do paciente.</p>
+                        <p>Além disso, sou apaixonado por disseminar conhecimento sobre nutrição através de workshops e palestras, contribuindo para uma comunidade mais informada, saudável e em movimento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="servicos" class="vertical-center">
+            <div class="section-content">
+                <h2>Serviços</h2>
+                <div class="flex-container">
+                    <img src="servicos.jpg" alt="Foto de Serviços de Nutrição">
+                    <ul class="text-right">
+                        <li>Consultoria Online Personalizada.</li>
+                        <li>Acompanhamento e Tirada de Dúvidas em horário comercial.</li>
+                        <li>Monitoria Individualizada para garantir resultados.</li>
+                        <li>Orientação Nutricional para atletas e praticantes de atividade física.</li>
+                        <li>Workshops e palestras.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="contato" class="vertical-center">
+            <div class="section-content">
+                <h2>Contato</h2>
+                <div class="flex-container">
+                    <img src="logo.png" alt="Venha fazer parte.">
+                    <div class="text-right">
+                        <p>Email: <a href="mailto:andreasaoka@gmail.com">andreasaoka@gmail.com</a></p>
+                        <p>Telefone: (11) 99947-8135</p>
+                        <div class="social-media">
+                            <a href="https://www.instagram.com/andreasaoka" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://wa.me/5511999478135" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://lattes.cnpq.br/7013460544008543" target="_blank"><i class="fas fa-file-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Andre Asaoka. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
